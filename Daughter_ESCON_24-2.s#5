@@ -849,7 +849,7 @@ Source: 8x ADG1408_1409.pdf</description>
 <vertex x="9.7536" y="-15.24"/>
 </polygon>
 </package>
-<package name="SOTFL50P160X60-6" urn="urn:adsk.eagle:footprint:6447023/1">
+<package name="SOTFL50P160X60-6" urn="urn:adsk.eagle:footprint:6447023/1" locally_modified="yes">
 <description>6-SOTFL, 0.50 mm pitch, 1.60 mm span, 1.60 X 1.20 X 0.60 mm body
 &lt;p&gt;6-pin SOTFL package with 0.50 mm pitch, 1.60 mm span with body size 1.60 X 1.20 X 0.60 mm&lt;/p&gt;</description>
 <circle x="-1.154" y="1.1907" radius="0.25" width="0" layer="21"/>
@@ -859,12 +859,12 @@ Source: 8x ADG1408_1409.pdf</description>
 <wire x1="-0.65" y1="-0.85" x2="-0.65" y2="0.85" width="0.12" layer="51"/>
 <wire x1="-0.65" y1="0.85" x2="0.65" y2="0.85" width="0.12" layer="51"/>
 <wire x1="0.65" y1="0.85" x2="0.65" y2="-0.85" width="0.12" layer="51"/>
-<smd name="1" x="-0.7096" y="0.5" dx="0.71" dy="0.3735" layer="1"/>
-<smd name="2" x="-0.7096" y="0" dx="0.71" dy="0.3735" layer="1"/>
-<smd name="3" x="-0.7096" y="-0.5" dx="0.71" dy="0.3735" layer="1"/>
-<smd name="4" x="0.7096" y="-0.5" dx="0.71" dy="0.3735" layer="1"/>
-<smd name="5" x="0.7096" y="0" dx="0.71" dy="0.3735" layer="1"/>
-<smd name="6" x="0.7096" y="0.5" dx="0.71" dy="0.3735" layer="1"/>
+<smd name="1" x="-0.8128" y="0.5" dx="0.9906" dy="0.29718125" layer="1"/>
+<smd name="2" x="-0.8128" y="0" dx="0.9906" dy="0.29718125" layer="1"/>
+<smd name="3" x="-0.8128" y="-0.5" dx="0.9906" dy="0.29718125" layer="1"/>
+<smd name="4" x="0.8128" y="-0.5" dx="0.9906" dy="0.29718125" layer="1"/>
+<smd name="5" x="0.8128" y="0" dx="0.9906" dy="0.29718125" layer="1"/>
+<smd name="6" x="0.8128" y="0.5" dx="0.9906" dy="0.29718125" layer="1"/>
 <text x="0" y="2.0757" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.6357" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
@@ -920,7 +920,7 @@ Source: 8x ADG1408_1409.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOTFL50P160X60-6" urn="urn:adsk.eagle:package:6447017/1" type="model">
+<package3d name="SOTFL50P160X60-6" urn="urn:adsk.eagle:package:6447017/1" locally_modified="yes" type="model">
 <description>6-SOTFL, 0.50 mm pitch, 1.60 mm span, 1.60 X 1.20 X 0.60 mm body
 &lt;p&gt;6-pin SOTFL package with 0.50 mm pitch, 1.60 mm span with body size 1.60 X 1.20 X 0.60 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -4594,9 +4594,9 @@ decoupling</text>
 </segment>
 <segment>
 <pinref part="ESCON_24-2" gate="G$1" pin="ENC_B"/>
-<wire x1="-68.58" y1="-15.24" x2="-81.28" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-15.24" x2="-81.28" y2="-20.32" width="0.1524" layer="91"/>
 <label x="-78.74" y="-15.24" size="1.778" layer="95"/>
-<pinref part="D3" gate="G$1" pin="IO3"/>
+<pinref part="D3" gate="G$1" pin="IO4"/>
 </segment>
 <segment>
 <pinref part="TP2" gate="G$1" pin="1"/>
@@ -4741,9 +4741,9 @@ decoupling</text>
 <net name="!ENC_B" class="0">
 <segment>
 <pinref part="ESCON_24-2" gate="G$1" pin="!ENC_B"/>
-<wire x1="-68.58" y1="-20.32" x2="-81.28" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-20.32" x2="-81.28" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-78.74" y="-20.32" size="1.778" layer="95"/>
-<pinref part="D3" gate="G$1" pin="IO4"/>
+<pinref part="D3" gate="G$1" pin="IO3"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -4833,31 +4833,25 @@ decoupling</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,-81.28,73.66,DAC,VSS,-15V,,,"/>
-<approved hash="104,1,-81.28,68.58,DAC,VOUT,VOUT_DAC,,,"/>
-<approved hash="104,1,-81.28,63.5,DAC,VDD,+15V,,,"/>
-<approved hash="104,1,-48.26,93.98,DAC,DGND,GND,,,"/>
-<approved hash="104,1,-48.26,99.06,DAC,DVCC,3.3V,,,"/>
-<approved hash="104,1,-12.7,-78.74,NOR_PWR,VCC,3.3V,,,"/>
-<approved hash="104,1,-53.34,-78.74,XOR_PWR,VCC,3.3V,,,"/>
-<approved hash="104,1,-134.62,-60.96,NOTP,VCC,3.3V,,,"/>
-<approved hash="106,1,-81.28,99.06,ALERT,,,,,"/>
-<approved hash="209,1,-81.28,93.98,CLEAR,,,,,"/>
-<approved hash="106,1,-81.28,93.98,CLEAR,,,,,"/>
-<approved hash="106,1,68.58,53.34,CURR,,,,,"/>
-<approved hash="106,1,-83.82,0,I1,,,,,"/>
-<approved hash="106,1,25.4,55.88,N$22,,,,,"/>
-<approved hash="106,1,25.4,45.72,N$24,,,,,"/>
-<approved hash="106,1,68.58,96.52,N$25,,,,,"/>
-<approved hash="106,1,68.58,86.36,N$27,,,,,"/>
-<approved hash="106,1,68.58,81.28,N$28,,,,,"/>
-<approved hash="106,1,68.58,63.5,N$31,,,,,"/>
-<approved hash="106,1,68.58,58.42,N$32,,,,,"/>
-<approved hash="106,1,68.58,48.26,N$34,,,,,"/>
-<approved hash="209,1,-81.28,88.9,RESET,,,,,"/>
-<approved hash="106,1,-81.28,88.9,RESET,,,,,"/>
-<approved hash="106,1,-81.28,83.82,VREFIN,,,,,"/>
-<approved hash="113,1,48.26,-6.58283,PCI_CARD,,,,,"/>
+<approved hash="104,1,93.98,63.5,DAC,VSS,-15V,,,"/>
+<approved hash="104,1,93.98,58.42,DAC,VOUT,VOUT_DAC,,,"/>
+<approved hash="104,1,93.98,53.34,DAC,VDD,+15V,,,"/>
+<approved hash="104,1,127,83.82,DAC,DGND,GND,,,"/>
+<approved hash="104,1,127,88.9,DAC,DVCC,3.3V,,,"/>
+<approved hash="104,1,40.64,-78.74,NOR_PWR,VCC,3.3V,,,"/>
+<approved hash="104,1,0,-78.74,XOR_PWR,VCC,3.3V,,,"/>
+<approved hash="104,1,-81.28,-60.96,NOTP,VCC,3.3V,,,"/>
+<approved hash="106,1,93.98,88.9,ALERT,,,,,"/>
+<approved hash="209,1,93.98,83.82,CLEAR,,,,,"/>
+<approved hash="106,1,93.98,83.82,CLEAR,,,,,"/>
+<approved hash="106,1,71.12,-20.32,I1,,,,,"/>
+<approved hash="106,1,-25.4,30.48,N$25,,,,,"/>
+<approved hash="106,1,-25.4,20.32,N$27,,,,,"/>
+<approved hash="106,1,-25.4,15.24,N$28,,,,,"/>
+<approved hash="209,1,93.98,78.74,RESET,,,,,"/>
+<approved hash="106,1,93.98,78.74,RESET,,,,,"/>
+<approved hash="106,1,93.98,73.66,VREFIN,,,,,"/>
+<approved hash="113,1,-99.06,87.3972,PCI_CARD,,,,,"/>
 </errors>
 </schematic>
 </drawing>

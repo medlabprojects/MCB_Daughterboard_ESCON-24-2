@@ -1983,13 +1983,13 @@ Trevor Bruns
 Trevor Bruns
 &lt;br&gt; October 2018</description>
 <gates>
-<gate name="G$1" symbol="DIODE_TVS_BIDIR_2" x="5.08" y="-2.54"/>
+<gate name="G$1" symbol="DIODE_TVS_BIDIR_2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT95P230X110-3">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="2"/>
+<connect gate="G$1" pin="2" pad="1"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <package3dinstances>
@@ -4772,6 +4772,8 @@ decoupling</text>
 <pinref part="ESCON_24-2" gate="G$1" pin="AIN2"/>
 <label x="-15.24" y="-2.54" size="1.778" layer="95" align="bottom-right"/>
 <wire x1="12.954" y1="-2.54" x2="-25.4" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="1"/>
+<wire x1="12.954" y1="-12.954" x2="12.954" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!AIN2" class="0">

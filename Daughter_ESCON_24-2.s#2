@@ -1575,7 +1575,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD5761">
+<deviceset name="AD5761" prefix="U">
 <description>&lt;b&gt;AD5761R&lt;/b&gt;&lt;p&gt;
 Multiple Range, 16-bit, Bipolar/Unipolar Voltage Output DAC &lt;p&gt;
 &lt;a href="http://www.analog.com/media/en/technical-documentation/data-sheets/AD5761R_5721R.pdf"&gt;datasheet &lt;p&gt;
@@ -1706,7 +1706,7 @@ Trevor Bruns- 2015</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONN_RECT_2X3">
+<deviceset name="CONN_RECT_2X3" prefix="J">
 <gates>
 <gate name="G$1" symbol="M06" x="0" y="0"/>
 </gates>
@@ -1776,7 +1776,7 @@ Trevor Bruns- 2015</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESCON_MODULE">
+<deviceset name="ESCON_MODULE" prefix="U">
 <gates>
 <gate name="G$1" symbol="ESCON_MODULE" x="0" y="0"/>
 </gates>
@@ -1873,7 +1873,7 @@ Trevor Bruns- 2015</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SHORT">
+<deviceset name="SHORT" prefix="JP">
 <gates>
 <gate name="G$1" symbol="SHORT" x="2.54" y="0"/>
 </gates>

@@ -3797,8 +3797,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="Cannula_1_0" deviceset="GND2" device=""/>
 <part name="SUPPLY5" library="Cannula_1_0" deviceset="3.3V" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="JUMP1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device=""/>
-<part name="JUMP2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device=""/>
+<part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device=""/>
+<part name="JP2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device=""/>
 <part name="GND3" library="Cannula_1_0" deviceset="GND2" device=""/>
 <part name="ESCON_24-2" library="Cannula_1_0" deviceset="ESCON_MODULE" device="24-2_BOTTOM_ENTRY" value="ESCON_MODULE24-2_BOTTOM_ENTRY"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND2" device=""/>
@@ -3966,10 +3966,10 @@ decoupling</text>
 <attribute name="NAME" x="-98.298" y="-96.393" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-102.616" y="-100.965" size="1.778" layer="96"/>
 </instance>
-<instance part="JUMP1" gate="G$1" x="-109.22" y="-91.44" smashed="yes">
+<instance part="JP1" gate="G$1" x="-109.22" y="-91.44" smashed="yes">
 <attribute name="NAME" x="-113.792" y="-95.25" size="1.778" layer="95"/>
 </instance>
-<instance part="JUMP2" gate="G$1" x="-60.96" y="-96.52" smashed="yes" rot="R180">
+<instance part="JP2" gate="G$1" x="-60.96" y="-96.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="-62.865" y="-100.33" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="GND3" gate="G$1" x="-93.98" y="-106.68" smashed="yes"/>
@@ -4687,10 +4687,10 @@ decoupling</text>
 <pinref part="LIM_SWITCH" gate="G$1" pin="2"/>
 <wire x1="-121.92" y1="-91.44" x2="-116.84" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-116.84" y1="-91.44" x2="-116.84" y2="-109.22" width="0.1524" layer="91"/>
-<pinref part="JUMP2" gate="G$1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="-116.84" y1="-109.22" x2="-60.96" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-109.22" x2="-60.96" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="JUMP1" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="-114.3" y1="-91.44" x2="-116.84" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="-116.84" y="-91.44"/>
 <label x="-122.682" y="-90.678" size="1.524" layer="95"/>
@@ -4698,7 +4698,7 @@ decoupling</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="JUMP1" gate="G$1" pin="2"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 <pinref part="NOT" gate="A" pin="I"/>
 <wire x1="-104.14" y1="-91.44" x2="-99.06" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -4714,7 +4714,7 @@ decoupling</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="NOT" gate="A" pin="O"/>
-<pinref part="JUMP2" gate="G$1" pin="3"/>
+<pinref part="JP2" gate="G$1" pin="3"/>
 <wire x1="-71.12" y1="-91.44" x2="-60.96" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4725,7 +4725,7 @@ decoupling</text>
 <label x="-22.352" y="-58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JUMP2" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="-96.52" x2="-53.34" y2="-96.52" width="0.1524" layer="91"/>
 <label x="-53.34" y="-96.52" size="1.778" layer="95"/>
 </segment>
